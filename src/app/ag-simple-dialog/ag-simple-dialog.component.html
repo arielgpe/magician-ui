@@ -1,0 +1,15 @@
+<div *ngIf="visible" [agSimpleDialog]="visible" id="agSimpleModal" class="modal">
+
+    <div class="modal-content">
+        <span class="close" id="cross" (click)="closeModal()">&times;</span>
+        <div *ngIf="headerTemplate">
+            <h2><ng-container *ngTemplateOutlet="headerTemplate"></ng-container></h2>
+        </div>
+        <div *ngIf="bodyTemplate">
+            <ng-container *ngTemplateOutlet="bodyTemplate"></ng-container>
+        </div>
+        <div *ngIf="footerTemplate">
+            <ng-container *ngTemplateOutlet="footerTemplate"></ng-container>
+        </div>
+    </div>
+</div>

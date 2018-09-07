@@ -8,14 +8,15 @@ import {
   OnInit,
   Output,
   QueryList,
-  TemplateRef
+  TemplateRef, ViewEncapsulation
 } from '@angular/core';
 import {AgTemplate} from "../ag-shared-module/ag-template.directive";
 
 @Component({
   selector: 'ag-simple-dialog',
   templateUrl: './ag-simple-dialog.component.html',
-  styleUrls: ['./ag-simple-dialog.component.scss']
+  styleUrls: ['./ag-simple-dialog.component.scss'],
+  encapsulation: ViewEncapsulation.Native
 })
 export class AgSimpleDialogComponent implements OnInit, AfterViewInit {
 

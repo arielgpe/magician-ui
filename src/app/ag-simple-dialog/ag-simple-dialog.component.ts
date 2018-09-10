@@ -2,21 +2,19 @@ import {
   AfterViewInit,
   Component,
   ContentChildren,
-  ElementRef,
   EventEmitter,
   Input,
   OnInit,
   Output,
   QueryList,
-  TemplateRef, ViewEncapsulation
+  TemplateRef
 } from '@angular/core';
 import {AgTemplate} from "../ag-shared-module/ag-template.directive";
 
 @Component({
   selector: 'ag-simple-dialog',
   templateUrl: './ag-simple-dialog.component.html',
-  styleUrls: ['./ag-simple-dialog.component.scss'],
-  encapsulation: ViewEncapsulation.Native
+  styleUrls: ['./ag-simple-dialog.component.scss']
 })
 export class AgSimpleDialogComponent implements OnInit, AfterViewInit {
 

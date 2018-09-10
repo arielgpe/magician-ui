@@ -1,17 +1,18 @@
 /* The Modal (background) */
 
 
-.fade {
+.ag-fade {
   transition: opacity .15s linear;
 }
-.modal.fade .modal-dialog {
+.ag-modal.ag-fade .modal-dialog {
   transition: -webkit-transform .3s ease-out;
   transition: transform .3s ease-out;
   -webkit-transform: translate(0,-25%);
   transform: translate(0,-25%);
 }
 
-.modal {
+.ag-modal {
+  background-color: rgba(0,0,0,0.50);
   position: fixed;
   top: 0;
   right: 0;
@@ -23,7 +24,7 @@
   outline: 0;
 }
 
-.modal-dialog {
+.ag-modal-dialog {
   position: relative;
   width: auto;
   margin: .5rem;
@@ -31,7 +32,7 @@
 }
 
 /* Modal Header */
-.modal-header {
+.ag-modal-header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: start;
@@ -44,12 +45,12 @@
   border-top-right-radius: .3rem;
 }
 
-.modal-title {
+.ag-modal-title {
   margin-bottom: 0;
   line-height: 1.5;
 }
 /* Modal Content */
-.modal-content {
+.ag-modal-content {
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -65,14 +66,14 @@
 }
 
 
-.modal-body {
+.ag-modal-body {
   position: relative;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   padding: 1rem;
 }
 
-.modal-footer {
+.ag-modal-footer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -86,7 +87,7 @@
 
 /* The Close Button */
 
-.close {
+.ag-close {
   float: right;
   font-size: 1.5rem;
   font-weight: 700;
@@ -95,16 +96,16 @@
   text-shadow: 0 1px 0 #fff;
   opacity: .5;
 }
-.close:not(:disabled):not(.disabled) {
+.ag-close:not(:disabled):not(.disabled) {
   cursor: pointer;
 }
 
-.modal-header .close {
+.ag-modal-header .ag-close {
   padding: 1rem;
   margin: -1rem -1rem -1rem auto;
 }
 
-button.close {
+button.ag-close {
   padding: 0;
   background-color: transparent;
   border: 0;
@@ -112,7 +113,7 @@ button.close {
 }
 
 @media (min-width: 576px) {
-  .modal-dialog {
+  .ag-modal-dialog {
     max-width: 500px;
     margin: 1.75rem auto;
   }

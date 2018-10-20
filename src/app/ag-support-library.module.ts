@@ -1,15 +1,17 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { AgSimpleDialogComponent } from './ag-simple-dialog/ag-simple-dialog.component';
-import { AgSimpleDialogDirective } from './ag-simple-dialog/ag-simple-dialog.directive';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {AgSharedModule} from "./ag-shared-module/ag-shared.module";
+import {AgSimpleDialogModule} from "./ag-simple-dialog/ag-simple-dialog.module";
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    AgSharedModule
   ],
   exports: [
-    AgSimpleDialogComponent
-  ],
-  declarations: [AgSimpleDialogComponent, AgSimpleDialogDirective]
+    CommonModule,
+    AgSharedModule,
+    AgSimpleDialogModule,
+  ]
 })
 export class AgSupportLibraryModule { }

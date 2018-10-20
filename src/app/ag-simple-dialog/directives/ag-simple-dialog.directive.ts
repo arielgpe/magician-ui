@@ -19,7 +19,6 @@ export class AgSimpleDialogDirective {
     } else {
       modal.nativeElement.style.display = "none";
     }
-    console.log(visible)
   }
 
 }

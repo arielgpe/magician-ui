@@ -1,22 +1,22 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AgSimpleDialogComponent } from './ag-simple-dialog.component';
+import { AgDialogComponent } from './ag-dialog.component';
 import {AgSimpleDialogDirective} from "./directives/ag-simple-dialog.directive";
 import {utf8Encode} from "@angular/compiler/src/util";
 
-describe('AgSimpleDialogComponent', () => {
-  let dialogComponent: AgSimpleDialogComponent;
-  let fixture: ComponentFixture<AgSimpleDialogComponent>;
+describe('AgDialogComponent', () => {
+  let dialogComponent: AgDialogComponent;
+  let fixture: ComponentFixture<AgDialogComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AgSimpleDialogComponent, AgSimpleDialogDirective]
+      declarations: [ AgDialogComponent, AgSimpleDialogDirective]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AgSimpleDialogComponent);
+    fixture = TestBed.createComponent(AgDialogComponent);
     dialogComponent = fixture.componentInstance;
     fixture.detectChanges();
   });

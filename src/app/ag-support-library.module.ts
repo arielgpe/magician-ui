@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {AgSharedModule} from "./ag-shared-module/ag-shared.module";
-import {AgSimpleDialogModule} from "./ag-simple-dialog/ag-simple-dialog.module";
+import {AgDialogModule} from "./ag-dialog/ag-dialog.module";
 
 @NgModule({
   imports: [
@@ -11,7 +11,7 @@ import {AgSimpleDialogModule} from "./ag-simple-dialog/ag-simple-dialog.module";
   exports: [
     CommonModule,
     AgSharedModule,
-    AgSimpleDialogModule,
+    AgDialogModule,
   ]
 })
 export class AgSupportLibraryModule { }

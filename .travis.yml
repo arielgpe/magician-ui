@@ -19,7 +19,7 @@ before_script:
 - sudo dpkg -i google-chrome*.deb
 
 script:
-- ng test
+- ng test --watch=false
 
 deploy:
   provider: pages

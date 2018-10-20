@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import {AgSimpleDialogModule} from "./ag-simple-dialog/ag-simple-dialog.module";
 
 
 @NgModule({
@@ -10,7 +11,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AgSimpleDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

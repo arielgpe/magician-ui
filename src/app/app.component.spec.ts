@@ -1,13 +1,13 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import {AgSimpleDialogComponent} from "./ag-simple-dialog/ag-simple-dialog.component";
-import {AgSimpleDialogDirective} from "./ag-simple-dialog/directives/ag-simple-dialog.directive";
+import {AgDialogComponent} from "./ag-dialog/ag-dialog.component";
+import {AgSimpleDialogDirective} from "./ag-dialog/directives/ag-simple-dialog.directive";
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        AgSimpleDialogComponent,
+        AgDialogComponent,
         AgSimpleDialogDirective
       ],
     }).compileComponents();

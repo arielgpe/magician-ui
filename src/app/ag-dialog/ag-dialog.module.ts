@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {AgSimpleDialogDirective} from "./directives/ag-simple-dialog.directive";
-import {AgSimpleDialogComponent} from "./ag-simple-dialog.component";
+import {AgDialogComponent} from "./ag-dialog.component";
 import {AgSharedModule} from "../ag-shared-module/ag-shared.module";
 
 @NgModule({
@@ -11,9 +11,9 @@ import {AgSharedModule} from "../ag-shared-module/ag-shared.module";
   exports: [
     CommonModule,
     AgSharedModule,
-    AgSimpleDialogComponent,
+    AgDialogComponent,
     AgSimpleDialogDirective
   ],
-  declarations: [AgSimpleDialogComponent, AgSimpleDialogDirective]
+  declarations: [AgDialogComponent, AgSimpleDialogDirective]
 })
-export class AgSimpleDialogModule { }
+export class AgDialogModule { }

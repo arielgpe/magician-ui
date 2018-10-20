@@ -13,10 +13,10 @@ import {AgTemplate} from "../ag-shared-module/ag-template.directive";
 
 @Component({
   selector: 'ag-simple-dialog',
-  templateUrl: './ag-simple-dialog.component.html',
-  styleUrls: ['./ag-simple-dialog.component.scss']
+  templateUrl: './ag-dialog.component.html',
+  styleUrls: ['./ag-dialog.component.scss']
 })
-export class AgSimpleDialogComponent implements OnInit, AfterViewInit {
+export class AgDialogComponent implements OnInit, AfterViewInit {
   @Input() visible: boolean = false;
   @Output() visibleChange: EventEmitter<boolean> = new EventEmitter();
   @ContentChildren(AgTemplate) templates: QueryList<AgTemplate>;

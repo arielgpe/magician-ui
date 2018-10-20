@@ -17,7 +17,6 @@ import {AgTemplate} from "../ag-shared-module/ag-template.directive";
   styleUrls: ['./ag-simple-dialog.component.scss']
 })
 export class AgSimpleDialogComponent implements OnInit, AfterViewInit {
-
   @Input() visible: boolean = false;
   @Output() visibleChange: EventEmitter<boolean> = new EventEmitter();
   @ContentChildren(AgTemplate) templates: QueryList<AgTemplate>;

@@ -1,3 +1,7 @@
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://travis-ci.org/arielgpe/AgSupportLibrary.svg?branch=master)](https://travis-ci.org/arielgpe/AgSupportLibrary)
+
 # AgSupportLibrary
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.

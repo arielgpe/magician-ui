@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 
 
 import {AppComponent} from './app.component';
-import {AgSupportLibraryModule} from "./ag-support-library.module";
+import {MaSupportLibraryModule} from "./ma-support-library.module";
 
 
 @NgModule({
@@ -12,7 +12,7 @@ import {AgSupportLibraryModule} from "./ag-support-library.module";
   ],
   imports: [
     BrowserModule,
-    AgSupportLibraryModule
+    MaSupportLibraryModule
   ],
   providers: [],
   bootstrap: [AppComponent]

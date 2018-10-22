@@ -1,13 +1,13 @@
 import {Directive, Input, TemplateRef} from '@angular/core';
 
 @Directive({
-  selector: '[agTemplate]'
+  selector: '[maTemplate]'
 })
-export class AgTemplate {
+export class MaTemplate {
 
   @Input() type: string;
 
-  @Input('agTemplate') name: string;
+  @Input('maTemplate') name: string;
 
   constructor(public template: TemplateRef<any>) {}
 

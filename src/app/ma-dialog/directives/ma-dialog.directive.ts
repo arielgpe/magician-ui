@@ -1,15 +1,15 @@
 import {Directive, Input, ViewContainerRef} from '@angular/core';
 
 @Directive({
-  selector: '[agSimpleDialog]'
+  selector: '[maSimpleDialog]'
 })
-export class AgSimpleDialogDirective {
+export class MaDialogDirective {
 
   constructor(private viewContainer: ViewContainerRef) {
 
   }
 
-  @Input() set agSimpleDialog(visible: boolean){
+  @Input() set maSimpleDialog(visible: boolean){
     const me = this;
     // Get the modal
     let modal = me.viewContainer.element;

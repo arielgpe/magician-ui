@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AgTemplate } from './ag-template.directive';
+import { MaTemplate } from './ma-template.directive';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  exports: [AgTemplate],
-  declarations: [AgTemplate]
+  exports: [],
+  declarations: [MaTemplate]
 })
-export class AgSharedModule { }
+export class MaSharedModule { }

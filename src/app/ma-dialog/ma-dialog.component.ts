@@ -9,17 +9,17 @@ import {
   QueryList,
   TemplateRef
 } from '@angular/core';
-import {AgTemplate} from "../ag-shared-module/ag-template.directive";
+import {MaTemplate} from "../ma-shared-module/ma-template.directive";
 
 @Component({
-  selector: 'ag-simple-dialog',
-  templateUrl: './ag-dialog.component.html',
-  styleUrls: ['./ag-dialog.component.scss']
+  selector: 'ma-dialog',
+  templateUrl: './ma-dialog.component.html',
+  styleUrls: ['./ma-dialog.component.scss']
 })
-export class AgDialogComponent implements OnInit, AfterViewInit {
+export class MaDialogComponent implements OnInit, AfterViewInit {
   @Input() visible: boolean = false;
   @Output() visibleChange: EventEmitter<boolean> = new EventEmitter();
-  @ContentChildren(AgTemplate) templates: QueryList<AgTemplate>;
+  @ContentChildren(MaTemplate) templates: QueryList<MaTemplate>;
   headerTemplate: TemplateRef<any>;
   bodyTemplate: TemplateRef<any>;
   footerTemplate: TemplateRef<any>;

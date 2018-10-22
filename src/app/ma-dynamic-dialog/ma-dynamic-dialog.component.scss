@@ -1,0 +1,20 @@
+:host {
+
+  .button-align-left {
+    .ui-dialog-footer {
+      text-align: left;
+    }
+  }
+
+  .button-align-center {
+    .ui-dialog-footer {
+      text-align: center;
+    }
+  }
+
+  .button-align-right {
+    .ui-dialog-footer {
+      text-align: right;
+    }
+  }
+}

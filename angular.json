@@ -7,7 +7,7 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "ag",
+      "prefix": "ma",
       "schematics": {},
       "architect": {
         "build": {

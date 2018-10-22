@@ -1,18 +1,18 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Welcome to AgSupportLibrary
+    Welcome to Magician UI
   </h1>
   <button (click)="isDialogVisible = true">Show Dialog</button>
 </div>
-<ag-simple-dialog [(visible)]="isDialogVisible">
-  <ng-template agTemplate="header">
+<ma-dialog [(visible)]="isDialogVisible">
+  <ng-template maTemplate="header">
     hi
   </ng-template>
-  <ng-template agTemplate="body">
+  <ng-template maTemplate="body">
     ho
   </ng-template>
-  <ng-template agTemplate="footer">
+  <ng-template maTemplate="footer">
     <button (click)="isDialogVisible = false">Close</button>
   </ng-template>
-</ag-simple-dialog>
+</ma-dialog>

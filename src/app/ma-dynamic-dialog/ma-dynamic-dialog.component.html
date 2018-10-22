@@ -1,0 +1,31 @@
+<!--<div class="dialog-utility">-->
+  <!--<p-dialog [positionTop]=100 header="{{title}}" [(visible)]="showDialog" [responsive]="true" [closable]="false"-->
+            <!--[closeOnEscape]="false" [modal]="true" [styleClass]="btnAlign">-->
+    <!--<div>-->
+    <!--<span [ngClass]="{'verizon-success': type == 'success', 'verizon-alert': type == 'alert', 'verizon-warning': type == 'warning'}">-->
+      <!--<i class="fa" *ngIf="iconClass != 'none'" [ngClass]="iconClass"></i>-->
+      <!--<span [ngStyle]="{'float': iconClass == 'none'? 'left':'right', 'margin-left': iconClass == 'none'? '0':'10px'}" [innerHTML]="message"></span>-->
+    <!--</span>-->
+    <!--</div>-->
+    <!--<p-footer *ngIf="buttons.length > 0">-->
+      <!--<button type="button" [hidden]="true"></button>-->
+      <!--<button *ngFor="let button of buttons" type="button" class="btn" [ngClass]="button.cssClass"-->
+              <!--style="margin-left: 5px;"-->
+              <!--(click)="button.action(this)">{{button.title}}-->
+      <!--</button>-->
+    <!--</p-footer>-->
+  <!--</p-dialog>-->
+<!--</div>-->
+<div class="dialog-utility">
+  <ma-dialog [(visible)]="isDialogVisible">
+    <ng-template maTemplate="header">
+      hi
+    </ng-template>
+    <ng-template maTemplate="body">
+      ho
+    </ng-template>
+    <ng-template maTemplate="footer">
+      <button (click)="isDialogVisible = false">Close</button>
+    </ng-template>
+  </ma-dialog>
+</div>

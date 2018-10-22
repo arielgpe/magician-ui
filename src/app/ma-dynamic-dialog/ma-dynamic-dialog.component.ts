@@ -1,5 +1,5 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
-import {DialogService} from "../../services/dialog.service";
+import {MaDialogService} from "./ma-dialog-service";
 
 @Component({
   selector: 'dialog-utility',
@@ -46,7 +46,7 @@ export class MaDynamicDialogComponent implements OnInit {
   iconClass = 'fa-exclamation-circle';
   btnAlign:string = 'button-align-right';
 
-  constructor(private dialogService: DialogService) {
+  constructor(private dialogService: MaDialogService) {
   }
 
   ngOnInit() {

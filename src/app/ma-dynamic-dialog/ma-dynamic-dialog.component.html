@@ -17,7 +17,7 @@
   <!--</p-dialog>-->
 <!--</div>-->
 <div class="dialog-utility">
-  <ma-dialog [(visible)]="isDialogVisible">
+  <ma-dialog [(visible)]="showDialog">
     <ng-template maTemplate="header">
       hi
     </ng-template>
@@ -25,7 +25,7 @@
       ho
     </ng-template>
     <ng-template maTemplate="footer">
-      <button (click)="isDialogVisible = false">Close</button>
+      <button (click)="showDialog = false">Close</button>
     </ng-template>
   </ma-dialog>
 </div>

@@ -6,7 +6,7 @@ import { MaTemplate } from './ma-template.directive';
   imports: [
     CommonModule
   ],
-  exports: [],
+  exports: [MaTemplate],
   declarations: [MaTemplate]
 })
 export class MaSharedModule { }

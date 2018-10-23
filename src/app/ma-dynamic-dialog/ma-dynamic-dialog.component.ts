@@ -2,9 +2,9 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {MaDialogService} from "./ma-dialog-service";
 
 @Component({
-  selector: 'dialog-utility',
-  templateUrl: './dialog-utility.component.html',
-  styleUrls: ['./dialog-utility.component.scss'],
+  selector: 'ma-dynamic-dialog',
+  templateUrl: './ma-dynamic-dialog.component.html',
+  styleUrls: ['./ma-dynamic-dialog.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
 

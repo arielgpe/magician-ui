@@ -1,5 +1,8 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 import {MaDynamicDialogComponent} from "./ma-dynamic-dialog.component";
+import {MaDialogComponent} from "../ma-dialog/ma-dialog.component";
+import {MaDialogDirective} from "../ma-dialog/directives/ma-dialog.directive";
+import {MaDialogService} from "./ma-dialog-service";
 
 
 describe('MaDynamicDialogComponent', () => {
@@ -8,7 +11,8 @@ describe('MaDynamicDialogComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MaDynamicDialogComponent ]
+      declarations: [ MaDynamicDialogComponent, MaDialogComponent, MaDialogDirective],
+      providers: [MaDialogService]
     })
       .compileComponents();
   }));

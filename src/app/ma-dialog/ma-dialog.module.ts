@@ -11,6 +11,8 @@ import {MaSharedModule} from "../ma-shared-module/ma-shared.module";
   exports: [
     CommonModule,
     MaSharedModule,
+    MaDialogComponent,
+    MaDialogDirective
   ],
   declarations: [MaDialogComponent, MaDialogDirective]
 })

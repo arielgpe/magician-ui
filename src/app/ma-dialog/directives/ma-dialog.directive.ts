@@ -1,7 +1,7 @@
 import {Directive, Input, ViewContainerRef} from '@angular/core';
 
 @Directive({
-  selector: '[maSimpleDialog]'
+  selector: '[maDialog]'
 })
 export class MaDialogDirective {
 
@@ -9,7 +9,7 @@ export class MaDialogDirective {
 
   }
 
-  @Input() set maSimpleDialog(visible: boolean){
+  @Input() set maDialog(visible: boolean){
     const me = this;
     // Get the modal
     let modal = me.viewContainer.element;

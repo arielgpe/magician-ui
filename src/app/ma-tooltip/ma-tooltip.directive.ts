@@ -5,37 +5,51 @@ import {Directive, ElementRef, HostListener, Input} from '@angular/core';
 })
 export class MaTooltipDirective {
 
-  @Input() maTooltipText: string;
+  pTag: any;
 
   constructor(private el: ElementRef) {
+    el.nativeElement.classList.add("ma-tooltip");
+    this.pTag = document.createElement(`span`);
+    this.pTag.classList.add("ma-tooltip-text");
   }
 
-  @HostListener("mouseenter") onMouseEnter(){
-    let element = this.el.nativeElement;
-    let pTag = document.createElement(`p`);
-    pTag.classList.add("ma-tooltip");
-    this.addNormalProperties(pTag);
-    pTag.appendChild(document.createTextNode(this.maTooltipText))
-    element.appendChild(pTag);
+  @Input() set maTooltipText (text: string){
+    this.pTag.appendChild(document.createTextNode(text));
+    this.el.nativeElement.appendChild(this.pTag);
   }
 
-  @HostListener("mouseleave") onMouseLeave(){
-    let tooltips = this.el.nativeElement.getElementsByClassName("ma-tooltip")
-    for (let i = 0; i < tooltips.length; i++) {
-      const tooltip = tooltips[i];
-      this.el.nativeElement.removeChild(tooltip)
+  @Input() set maTooltipPosition(position: string){
+    switch (position) {
+      case "right":
+        this.pTag.classList.add("ma-tooltip-right");
+        break;
+      case  "bottom":
+        this.pTag.classList.add("ma-tooltip-bottom");
+        break;
+      case "left":
+        this.pTag.classList.add("ma-tooltip-left");
+        break;
+      case "top":
+        this.pTag.classList.add("ma-tooltip-top");
+        break;
+      default:
+        this.pTag.classList.add("ma-tooltip-right");
+        break
+
 
     }
   }
+  @HostListener("mouseenter") onMouseEnter(){
+    let element = this.el.nativeElement;
+    this.pTag.style.visibility = "visible"
+  }
 
-  addNormalProperties(el: any){
-    el.style.position = "absolute";
-    el.style.backgroundColor = "#646464";
-    el.style.borderRadius = "4px";
-    el.style.padding = "6px 12px";
-    el.style.fontSize = "12px";
-    el.style.textShadow = "0px 1px 1px #000";
-    el.style.color = "#ffc64a";
+  @HostListener("mouseleave") onMouseLeave(){
+    let tooltips = this.el.nativeElement.getElementsByClassName("ma-tooltip-text")
+    for (let i = 0; i < tooltips.length; i++) {
+      let tooltip = tooltips[i];
+      tooltip.style.visibility = "hidden"
+    }
   }
 }
 
